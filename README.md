@@ -21,10 +21,10 @@ Exigences HTML
 Ok      Le code HTML doit être bien structuré et facile à lire.
 OK      L'application doit avoir un élément conteneur qui contient tous les autres éléments.
 OK      Le champ de saisie doit être un élément input avec type="text".
-Le bouton de soumission doit être un élément button avec type="submit".
+OK      Le bouton de soumission doit être un élément button avec type="submit".
 OK      La liste des tâches doit être un élément de liste non ordonnée (ul), chaque tâche étant un élément de liste (li).
 OK      La case à cocher de chaque tâche doit être un élément input avec type="checkbox".
-Le bouton de suppression de chaque tâche doit être un élément button avec un identifiant unique pour chaque tâche.
+OK      Le bouton de suppression de chaque tâche doit être un élément button avec un identifiant unique pour chaque tâche.
 Exigences CSS
 
 Le code CSS doit être bien organisé et facile à lire, une seule importation css dans le fichier html.

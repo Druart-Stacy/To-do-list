@@ -9,6 +9,13 @@ ul {
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(82, 82, 235);
+    display: flex;
+    // align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .contenaire {
@@ -16,7 +23,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
