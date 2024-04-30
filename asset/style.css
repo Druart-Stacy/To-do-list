@@ -1,0 +1,78 @@
+@charset "UTF-8";
+body {
+  background-color: aqua;
+}
+
+/* Style de base pour les éléments */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contenaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nouvelleTacheInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
+}
+
+.bouton-soumission {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  height: 50%;
+  width: 30%;
+}
+
+.bouton-soumission:hover {
+  background-color: #0056b3;
+}
+
+.listeTaches {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkbox:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.boutonsup {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+}
+
+.boutonsup:hover {
+  background-color: #c82333;
+}/*# sourceMappingURL=style.css.map */
