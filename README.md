@@ -6,8 +6,8 @@ Exigences fonctionnelles
 OK      Un champ de saisie pour ajouter de nouvelles tâches à la liste.
 OK      Un bouton pour soumettre la nouvelle tâche.
 OK      Une liste de toutes les tâches qui ont été ajoutées.
-OK      Une case à cocher à côté de chaque tâche qui permet à l'utilisateur de marquer la tâche comme terminée.
-Un bouton pour supprimer les tâches terminées.
+OK      Une case à cocher à côté de chaque tâche qui permet à l'utilisateur --------de marquer la tâche comme terminée.
+OK      Un bouton pour supprimer les tâches terminées.
 
 Exigences en matière d'interface utilisateur
 
@@ -21,10 +21,10 @@ Exigences HTML
 Ok      Le code HTML doit être bien structuré et facile à lire.
 OK      L'application doit avoir un élément conteneur qui contient tous les autres éléments.
 OK      Le champ de saisie doit être un élément input avec type="text".
-Le bouton de soumission doit être un élément button avec type="submit".
+OK      Le bouton de soumission doit être un élément button avec type="submit".
 OK      La liste des tâches doit être un élément de liste non ordonnée (ul), chaque tâche étant un élément de liste (li).
 OK      La case à cocher de chaque tâche doit être un élément input avec type="checkbox".
-Le bouton de suppression de chaque tâche doit être un élément button avec un identifiant unique pour chaque tâche.
+OK      Le bouton de suppression de chaque tâche doit être un élément button avec un identifiant unique pour chaque tâche.
 Exigences CSS
 
 Le code CSS doit être bien organisé et facile à lire, une seule importation css dans le fichier html.

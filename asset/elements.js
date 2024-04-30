@@ -21,6 +21,13 @@ listeTaches.id = 'listeTaches';
 boutonsoumission.textContent = 'Ajouter';
 boutonsup.textContent = 'Supprimer';
 
+//ajout du type submit
+boutonsoumission.setAttribute('type', 'submit');
+
+//ajout de l id 
+boutonsup.id='boutonsup';
+
+
 // Sélectionner le corps du document
 const body = document.body || document.getElementsByTagName('body')[0];
 

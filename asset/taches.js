@@ -3,7 +3,10 @@ import { saisie, listeTaches } from './elements.js';
 // Fonction pour ajouter une tâche
 export function ajouterTache() {
     // Récupérer la valeur saisie dans le champ de saisie
+        // let x =document.getElementById("Submit").value
+        // document.getElementById("demo").innerHTML=x;
     const nouvelleTache = saisie.value;
+
 
     // Vérifier si la saisie n'est pas vide
     if (nouvelleTache.trim() !== '') {
