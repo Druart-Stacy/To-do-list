@@ -18,7 +18,7 @@ Les cases à cocher et les boutons de suppression doivent être clairement visib
 
 Exigences HTML
 
-ok      Le code HTML doit être bien structuré et facile à lire.
+Ok      Le code HTML doit être bien structuré et facile à lire.
 OK      L'application doit avoir un élément conteneur qui contient tous les autres éléments.
 OK      Le champ de saisie doit être un élément input avec type="text".
 Le bouton de soumission doit être un élément button avec type="submit".

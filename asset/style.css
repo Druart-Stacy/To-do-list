@@ -1,21 +1,27 @@
 @charset "UTF-8";
-body {
-  background-color: aqua;
+/* Réinitialisation des marges et des rembourrages */
+body,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /* Style de base pour les éléments */
 body {
   font-family: Arial, sans-serif;
+  background-color: rgb(82, 82, 235);
 }
 
 .contenaire {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-#nouvelleTacheInput {
+.contenaire #nouvelleTacheInput {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -23,56 +29,53 @@ body {
   border-radius: 5px;
   box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
 }
-
-.bouton-soumission {
-  display: block;
+.contenaire .bouton-soumission {
+  width: 30%;
+  padding: 10px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  display: flex;
-  height: 50%;
-  width: 30%;
 }
-
-.bouton-soumission:hover {
+.contenaire .bouton-soumission:hover {
   background-color: #0056b3;
 }
-
-.listeTaches {
+.contenaire .listeTaches {
   list-style: none;
   padding-left: 0;
 }
-
-li {
+.contenaire li {
   margin-bottom: 10px;
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
   display: flex;
 }
-
-.checkbox {
-  margin-right: 10px;
+.contenaire .checkbox {
+  width: 50%;
 }
-
-.checkbox:checked + label {
+.contenaire .checkbox:checked + label {
   text-decoration: line-through;
   color: #888;
 }
-
-.boutonsup {
-  background-color: #dc3545;
+.contenaire .boutonsup {
+  width: 30%;
+  padding: 10px;
+  background-color: #ff0000;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  display: flex;
+}
+.contenaire .boutonsup:hover {
+  background-color: #c82333;
 }
 
-.boutonsup:hover {
-  background-color: #c82333;
+@media screen and (min-width: 601px) {
+  .contenaire {
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=style.css.map */

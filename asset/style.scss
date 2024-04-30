@@ -1,105 +1,99 @@
-body{
-    background-color: aqua;
+/* Réinitialisation des marges et des rembourrages */
+body,
+ul {
+    margin: 0;
+    padding: 0;
 }
-// Le code CSS doit être bien organisé et facile à lire, une seule importation css dans le fichier html.
-// Mobile first, responsive, et utilisable sur smartphone (testez-le sur un vrai smartphone)
-// Le champ de saisie, le bouton d'envoi, la liste des tâches doivent être stylisés de manière appropriée pour faciliter la 
-// lecture et l'interaction.
-// Les tâches achevées doivent être présentées différemment des tâches non achevées.
-// Le bouton de suppression doit être stylisé différemment de la case à cocher.
-// .contenaire {
-//     /* Réinitialisation des marges et des rembourrages */
-// body, ul {
-//     margin: 0;
-//     padding: 0;
-// }
 
 /* Style de base pour les éléments */
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(82, 82, 235);
 }
 
 .contenaire {
-    // max-width: 400px;
-    // margin: 0 auto;
-    // padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    // .barre-recherche {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-bottom: 10px;
+    //     width: 50%;    
+    // }
+
+    #nouvelleTacheInput {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
+    }
+
+    .bouton-soumission {
+        width: 30%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .bouton-soumission:hover {
+        background-color: #0056b3;
+    }
+
+    .listeTaches {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .checkbox {
+        // margin-right: 50px;
+        width: 50%;
+    }
+
+    .checkbox:checked + label {
+        text-decoration: line-through;
+        color: #888;
+    }
+
+    .boutonsup {        
+        width: 30%;
+        padding: 10px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+
+    .boutonsup:hover {
+        background-color: #c82333;
+    }
 }
-
-#nouvelleTacheInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
-}
-
-.bouton-soumission {
-    display: block;
-    // width: 100%;
-    // padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    // justify-content: center;
-    // align-items: center;
-    height: 50%;
-    width: 30%;
-}
-
-.bouton-soumission:hover {
-    background-color: #0056b3;
-}
-
-.listeTaches {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    display: flex;
-}
-
-.checkbox {
-    margin-right: 10px;
-}
-
-.checkbox:checked + label {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.boutonsup {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    // padding: 5px 10px;
-    // margin-left: auto;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display:flex;
-
-}
-
-.boutonsup:hover {
-    background-color: #c82333;
-}
-
 
 //-----------------------------------pc------------------------------------------
-@media screen and (min-width:601px) {
-
+@media screen and (min-width: 601px) {
+    .contenaire {
+        max-width: 600px;
+    }
 }
