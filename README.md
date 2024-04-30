@@ -36,7 +36,7 @@ Exigences en matière de JavaScript
 
 OK      Le code JavaScript doit être bien organisé et facile à lire.
 OK      Utiliser des modules JS.
-OK      Un tableau ou un objet pour stocker les tâches.
+OK     Un tableau ou un objet pour stocker les tâches.
 Stocker les éléments des tâches dans le stockage local et les récupérer au chargement.
 OK      L'application doit comporter des fonctions permettant d'ajouter des tâches à la liste, de marquer les tâches comme terminées, -------de supprimer les tâches terminées et de mettre à jour les tâches.
 Utiliser des récepteurs d'événements pour détecter lorsque l'utilisateur soumet une nouvelle tâche, marque une tâche comme terminée ou --------supprime une tâche terminée.
