@@ -16,9 +16,11 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
 
     // .barre-recherche {
     //     display: flex;
@@ -45,6 +47,7 @@ body {
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        
     }
 
     .bouton-soumission:hover {
@@ -83,13 +86,13 @@ body {
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        
     }
     
 
     .boutonsup:hover {
         background-color: #c82333;
     }
-}
 
 //-----------------------------------pc------------------------------------------
 @media screen and (min-width: 601px) {

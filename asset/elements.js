@@ -33,7 +33,7 @@ const body = document.body || document.getElementsByTagName('body')[0];
 
 // Ajouter les éléments au corps du document
 body.appendChild(contenaire);
-contenaire.appendChild(listeTaches);
+body.appendChild(listeTaches);
 contenaire.appendChild(boutonsoumission);
 contenaire.appendChild(boutonsup);
 contenaire.appendChild(saisie);

@@ -17,11 +17,12 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.contenaire #nouvelleTacheInput {
+
+#nouvelleTacheInput {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -29,7 +30,8 @@ body {
   border-radius: 5px;
   box-sizing: border-box; /* Pour inclure la bordure dans la largeur totale */
 }
-.contenaire .bouton-soumission {
+
+.bouton-soumission {
   width: 30%;
   padding: 10px;
   background-color: #007bff;
@@ -39,28 +41,34 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.contenaire .bouton-soumission:hover {
+
+.bouton-soumission:hover {
   background-color: #0056b3;
 }
-.contenaire .listeTaches {
+
+.listeTaches {
   list-style: none;
   padding-left: 0;
 }
-.contenaire li {
+
+li {
   margin-bottom: 10px;
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
   display: flex;
 }
-.contenaire .checkbox {
+
+.checkbox {
   width: 50%;
 }
-.contenaire .checkbox:checked + label {
+
+.checkbox:checked + label {
   text-decoration: line-through;
   color: #888;
 }
-.contenaire .boutonsup {
+
+.boutonsup {
   width: 30%;
   padding: 10px;
   background-color: #ff0000;
@@ -70,7 +78,8 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.contenaire .boutonsup:hover {
+
+.boutonsup:hover {
   background-color: #c82333;
 }
 
